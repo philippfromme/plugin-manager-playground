@@ -1,0 +1,85 @@
+:root {
+  --blue-base-65: hsl(217,100%,65%);
+  --blue-darken-62: hsl(217,100%,62%);
+  --blue-darken-55: hsl(217,100%,55%);
+  --blue-darken-48: hsl(217,100%,48%);
+  --blue-darken-32: hsl(217,100%,32%);
+  --blue-darken-18: hsl(217,100%,18%);
+  --text-color: hsl(225, 10%, 15%);
+}
+
+* {
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  background: hsl(225, 10%, 95%);
+  border-bottom: solid 1px #CCC;
+  padding: 10px 20px;
+}
+
+.toolbar span {
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.toolbar button {
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 6px;
+  font-size: 16px;
+  user-select: none;
+  border: none;
+  background-color: hsl(217,100%,65%);
+  color: white;
+  border: 1px solid hsl(217,100%,62%);
+  box-shadow: rgb(0 0 0 / 35%) 0px 2px 2px 0px;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 0px 21px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.toolbar button:hover, .toolbar button.active {
+  background-color: var(--blue-darken-55);
+  border-color: var(--blue-darken-48);
+}
+
+.toolbar button:first-child {
+  /* margin-left: 0; */
+}
+
+.modeler {
+  display: flex;
+  flex-grow: 1;
+}
+
+#container {
+  flex-grow: 1;
+}
+
+#properties-panel-container {
+  background: #f8f8f8;
+  border-left: solid 1px #ccc;
+  width: 300px;
+}

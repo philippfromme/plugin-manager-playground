@@ -1,0 +1,32 @@
+{
+  "name": "bpmn-js-properties-panelnext-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "webpack serve --open"
+  },
+  "dependencies": {
+    "@bpmn-io/properties-panel": "0.14.0",
+    "bpmn-js": "9.2.2",
+    "bpmn-js-bpmnlint": "^0.18.0",
+    "bpmn-js-properties-panel": "1.1.1",
+    "bpmn-js-token-simulation": "^0.27.0",
+    "bpmnlint": "^7.8.0",
+    "bpmnlint-plugin-camunda-compat": "^0.8.0",
+    "camunda-bpmn-moddle": "6.1.2",
+    "zeebe-bpmn-moddle": "0.12.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "parcel-bundler": "^1.6.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
+  },
+  "keywords": []
+}
