@@ -5,7 +5,7 @@ export default class PluginManager {
     this._activePlugin = null;
   }
 
-  activatePlugin(id) {
+  activatePlugin(id, exclusive = true) {
     if (!this._plugins[ id ]) {
       throw new Error('plugin not registered');
     }
@@ -13,7 +13,7 @@ export default class PluginManager {
     Object.entries(this._plugins).forEach(([ _id, plugin ]) => {
       if (_id === id) {
         plugin.activate();
-      } else {
+      } else if (exclusive) {
         plugin.deactivate();
       }
     });
